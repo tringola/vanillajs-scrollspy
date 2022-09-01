@@ -26,10 +26,10 @@ scrollspy.init();
 - **easing (optional):** scroll type `'easeOutSine'`, `'easeInOutSine'` or `'easeInOutQuint'`, default value `'easeInOutQuint'`
 
 ```javascript
-import VanillaScrollspy from 'vanillajs-scrollspy';
+<script src="your_dir/vanilla-scrollspy.js"><script>
 
 const navbar = document.querySelector('#navbar');
-const scrollspy = VanillaScrollspy(navbar);
+const scrollspy = new VanillaScrollspy(navbar);
 scrollspy.init();
 ```
 
