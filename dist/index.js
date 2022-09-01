@@ -15,6 +15,8 @@ window.requestAnimFrame = (() => window.requestAnimationFrame
     this.$menu = menu;
     this.speed = speed;
     this.easing = easing;
+      this.animated();
+      document.addEventListener('scroll', () => this.menuControl());
   }
 
 VanillaScrollspy.prototype.scrollToY= function(targetY = 0) {
@@ -85,9 +87,6 @@ VanillaScrollspy.prototype.animated= function() {
     Array.from($links).forEach((link) => link.addEventListener('click', control));
   };
 
-VanillaScrollspy.prototype.init= function(){
-    this.animated();
-    document.addEventListener('scroll', () => this.menuControl());
-  };
+
 ////////////////////////////////////////////////////////
 
