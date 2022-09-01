@@ -87,9 +87,6 @@ VanillaScrollspy.prototype.animated= function() {
     Array.from($links).forEach((link) => link.addEventListener('click', control));
 };
 
-VanillaScrollspy.prototype.init= function(){
-    this.animated();
-    document.addEventListener('scroll', () => this.menuControl());
-};
+
 ////////////////////////////////////////////////////////
 
