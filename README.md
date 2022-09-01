@@ -12,14 +12,12 @@ IE 10+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔
 
 ## Installation
 
-```bash
-$ npm install vanillajs-scrollspy --save
-```
+
 
 ## How to use
 
 ```javascript
-const scrollspy = VanillaScrollspy(menu, speed, easing);
+const scrollspy = new VanillaScrollspy(menu, speed, easing);
 scrollspy.init();
 ```
 
@@ -27,41 +25,11 @@ scrollspy.init();
 - **speed (optional):** scroll speed, default value `2000`
 - **easing (optional):** scroll type `'easeOutSine'`, `'easeInOutSine'` or `'easeInOutQuint'`, default value `'easeInOutQuint'`
 
-### ES6
-
 ```javascript
-import VanillaScrollspy from 'vanillajs-scrollspy';
+<script src="your_dir/vanilla-scrollspy.js"><script>
 
 const navbar = document.querySelector('#navbar');
-const scrollspy = VanillaScrollspy(navbar);
-scrollspy.init();
-```
-
-### CommonJS
-
-```javascript
-const VanillaScrollspy = require('vanillajs-scrollspy').default;
-
-const navbar = document.querySelector('#navbar');
-const scrollspy = VanillaScrollspy(navbar);
-scrollspy.init();
-```
-
-### UMD in Browser
-
-```html
-<!-- to import non-minified version -->
-<script src="./dist/vanillajs-scrollspy.js"></script>
-
-<!-- to import minified version -->
-<script src="./dist/vanillajs-scrollspy.min.js"></script>
-```
-
-After that the library will be available to the Global as `VanillaScrollspy`. Follow an example:
-
-``` javascript
-const navbar = document.querySelector('#navbar');
-const scrollspy = VanillaScrollspy(navbar);
+const scrollspy = new VanillaScrollspy(navbar);
 scrollspy.init();
 ```
 
@@ -168,7 +136,7 @@ Choose a number greater than or equal to 1.
 
 ``` javascript
 const navbar = document.querySelector('#navbar');
-const scrollspy = VanillaScrollspy(navbar, 1000);
+const scrollspy = new VanillaScrollspy(navbar, 1000);
 scrollspy.init();
 ```
 
@@ -176,7 +144,7 @@ scrollspy.init();
 
 ``` javascript
 const navbar = document.querySelector('#navbar');
-const scrollspy = VanillaScrollspy(navbar, 1000, 'easeInOutQuint');
+const scrollspy = new VanillaScrollspy(navbar, 1000, 'easeInOutQuint');
 scrollspy.init();
 ```
 
