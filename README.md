@@ -18,7 +18,7 @@ IE 10+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔
 
 ```javascript
 const scrollspy = new VanillaScrollspy(menu, speed, easing);
-scrollspy.init();
+
 ```
 
 - **menu:** menu selector (#id, .class, ...)
@@ -30,7 +30,7 @@ scrollspy.init();
 
 const navbar = document.querySelector('#navbar');
 const scrollspy = new VanillaScrollspy(navbar);
-scrollspy.init();
+
 ```
 
 ## Examples
@@ -124,8 +124,7 @@ Available in [`examples/index.html`](examples/index.html).
     <script src="./dist/vanillajs-scrollspy.min.js"></script>
     <script>
       const navbar = document.querySelector('#navbar');
-      const scrollspy = VanillaScrollspy(navbar);
-      scrollspy.init();
+      const scrollspy = VanillaScrollspy(navbar);     
     </script>
   </body>
 </html>
@@ -137,7 +136,6 @@ Choose a number greater than or equal to 1.
 ``` javascript
 const navbar = document.querySelector('#navbar');
 const scrollspy = new VanillaScrollspy(navbar, 1000);
-scrollspy.init();
 ```
 
 ### Changing scroll type
@@ -145,7 +143,6 @@ scrollspy.init();
 ``` javascript
 const navbar = document.querySelector('#navbar');
 const scrollspy = new VanillaScrollspy(navbar, 1000, 'easeInOutQuint');
-scrollspy.init();
 ```
 
 ## Contributing
