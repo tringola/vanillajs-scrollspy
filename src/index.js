@@ -9,6 +9,7 @@ window.requestAnimFrame = (() => window.requestAnimationFrame
   || fncAnimation
 )();
 
+
 class VanillaScrollspy {
   constructor(menu, speed = 2000, easing = 'easeOutSine') {
     this.$menu = menu;
