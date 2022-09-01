@@ -10,11 +10,13 @@ window.requestAnimFrame = (() => window.requestAnimationFrame
 )();
 
 
-
 function  VanillaScrollspy(menu, speed = 2000, easing = 'easeOutSine') {
     this.$menu = menu;
     this.speed = speed;
     this.easing = easing;
+
+    this.animated();
+    document.addEventListener('scroll', () => this.menuControl());
 }
 
 VanillaScrollspy.prototype.scrollToY= function(targetY = 0) {
